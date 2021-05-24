@@ -3,13 +3,17 @@
     font-weight: normal; 
     font-size: 16px;
     font-style: normal;
-    background-color: #AD1E00;
+    background-color: #3D2A20;
 }
 
 .name {
     font-size: 22px;
     font-family: monospace;
     font-weight: lighter;
+}
+
+.foot {
+    background-color: #A67A60;
 }
 
 .bg-img{
