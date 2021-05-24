@@ -1,54 +1,231 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Vai um café?</title>
-
-    <!--bootstrap stylesheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--css-->
-    <link rel="stylesheet" href="assets/style.css">    
 </head>
-
-  
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light menu">
-        <a class="navbar-brand menu" href="#">Vai um café?</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse menu" id="conteudoNavbarSuportado">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Café no Brasil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Barista</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-            </li>
-              </div>
-            </li>
-           
-          </ul>
-         
+<body style="background-color:#F5EAD8;">
+     <!--menu-->
+     <nav class="navbar navbar-expand-lg sticky-top navbar-dark menu">
+        <a class="navbar-brand name ml-4 col-md-7" href="index.html">Vai um café?</a>
+        <div class="container-fluid"> 
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link mr-3" href="index.html">Home<span class="sr-only"></span></a>
+                </li>
+               
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="#xic">Da terra à xícara</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="#barismo">Barismo</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link mr-2" href="#mitos">Mitos do café</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                  </li>
+              </ul>
+            </div>
         </div>
       </nav>
+    <!--/menu-->
 
-     
+    <!--carrossel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+            <div class="carousel-inner">   
+                <div class="carousel-item active">
+                <img class="d-block w-100" style="height: 750px;" src="assets/img/tree/hands-that-are-picking-coffee-beans-from-the-coffee-tree.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vai um café?</h5>
+                    <p>um blog sobre o incrível mundo do café</p>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" style="height: 750px;" src="assets/img/beans/moedor.jpg" alt="Terceiro Slide">
+            </div> 
+            <div class="carousel-item">
+                <img class="d-block w-100 " style="height: 750px;" src="assets/img/brewing/coado.jpg" alt="Primeiro Slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
+        </div>
+     </div>
+    <!--/carrossel-->
 
-<!-- bootstrap-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--jumbotron-->
+
+    <div class="jumbotron jumbotron-fluid" style="padding-top: 45px;">
+        <p class="lead">
+            <img class="d-block w-100" style="height: 350px;" src="assets/img/tree/processing-fresh-coffee-beans.jpg" alt="cabeçalho">
+      </div>
+    </div>
+    <!--/jumbotron-->
+
+<!--ciclo-->
+    <div class="container-fluid"> 
+        <h3 class="mt-5 mb-3" style="padding-left: 38px; padding-bottom: 10px;" id="xic">Da terra à xicara</h3>
+          <div class="row text-center"> 
+         
+            <div class="col-lg-12"> 
+                
+         
+              <div class="col-6 ml-4 float-left text-justify">
+                <p>
+                O plantio do café deve ser inciado no período de chuvas, quando o solo está úmido, após uma análise do solo, serão aplicados adubos e será feito controle de pragas e doenças .
+                Quando os grãos estiverem de tom cereja, estão prontos para colheita, embora algumas variedades podem apresentar um tom amarelo na fase madura.</p>
+               <p> 
+                Logo após a colheita, o processo deve ser rápido para evitar a deterioração. Dependendo do local e dos recursos, existem dois métodos para a fermentação. O mais antigo e tradicional é o de secagem ao sol, em que o café é colocado em redes e revirado durante o dia para que seque por igual, sendo coberto durante a noite. Conhecido como método seco e natural, pode levar semanas, e possibilita a fermentação benéfica entre a casca e o grão. </p>
+                
+                <p>
+                    O outro método envolve água e maquinário, e se baseia na separação da polpa e do grão. A polpa é lavada com água. Os grãos são separados por peso ao serem colocados em canais de água. Os mais leves flutuam para o topo, enquanto os grãos maduros, mais pesados, afundam. Em seguida, eles passam por uma série de tambores rotativos que os separam por tamanho. Depois, os grãos são transportados para tanques de fermentação cheios de água. Dependendo de uma combinação de fatores que envolve grãos, clima e altitude, eles permanecerão nestes tanques entre 12 e 48 horas. A finalidade deste processo é remover a camada lisa de mucilagem que ainda está ligada ao grão. Enquanto os grãos descansam nos tanques, enzimas naturais que se formam no processo farão com que esta camada se dissolva. Quando a fermentação está completa, os grãos estarão em estado bruto e ásperos ao toque. Nesse momento, eles são lavados em canais de água adicionais.</p>
+                <p> 
+                     Então é hora da secagem, que pode acontecer ao sol usando mesas de secagem ou pisos, onde eles são remexidos com constância. Eles também podem ser secos em máquinas. </p>
+                <p>
+                   O café será torrado em altíssima temperatura numa máquina que gira, para que os grãos não queimem.
+                   Esta etapa já é feita próxima a venda, que costuma ser em sacas de 60kg.
+                   O café será provado, receberá notas, e então será distribuído para venda. 
+                   Algumas micro torrefações comprarão café ainda verde, visto que deve ser consumido o quanto antes após relizar a torra.
+                   O café deve ser então moído de acordo com o método de extração desejado, e pode ser preparado das mais diversas maneiras.</p>
+                <p style="padding-bottom: 10px;"> 
+                    <a href="http://moccato.hmg.marlin.com.br">fonte: Moccato</a></p>
+                </div>
+
+                <div> 
+                    <iframe 
+                    class="mr-3"
+                    width="560" 
+                    height="315" src="https://www.youtube.com/embed/M0VWroX0gZA"
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>   
+                </div>                
+            
+            </div>
+        </div>        
+        </div>
+<!--/ciclo-->
+<!--cards barismo-->
+<div class="col-6 ml-5 text-justify" style="padding: 10px;">   
+    <h3 id="barismo" style="padding-bottom: 10px;">Barismo</h3>
+
+    <p>
+    A preparação do café é uma arte, assim como a gastronomia, a confeitaria e a coquetelaria.
+    A pessoa barista é a última etapa no ciclo do café antes do consumo. Eé responsável pela moagem, extração perfeita do café, e pela preparação de diversas bebidas com café. Sendo muitas vezes o barista chefe também responsável pela criação de cardápios. 
+    O café pode ser espresso ou coado em muitas variações, sendo em algumas receitas infusionado, ou até mesmo cozido e servido com a borra como na receita turca. 
+    Nas variações de café e leite, normalmente o espresso é utilizado. 
+    </p>
+</div>
+
+
+<!--/cards barismo-->
+
+
+<!--historia do café -->
+
+<div class="col-6 ml-5 text-justify" style="padding: 10px;">   
+    <h3 id="mitos" style="padding-bottom: 10px;"> Mitos do café</h3>
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sapien turpis, congue et iaculis eget, blandit in lacus. Maecenas sed eros quis turpis lacinia ultrices. Donec lacinia lorem at sollicitudin egestas. In blandit vel nunc non interdum. Phasellus quis leo ac turpis consequat ultricies ut in erat. Sed ut justo in tellus suscipit suscipit. Pellentesque metus purus, aliquet in nisi ut, suscipit ultrices est. Donec viverra dolor libero, eu vestibulum purus elementum sit amet. Integer interdum augue sit amet tortor pretium, vitae pellentesque libero tincidunt. Mauris condimentum quis neque vitae interdum. Sed mollis arcu sapien, ultrices volutpat odio rhoncus a. Etiam rutrum purus ac pellentesque eleifend.
+
+    Etiam nec auctor turpis. Suspendisse finibus tellus ut tempus tincidunt. Vivamus commodo hendrerit diam vitae vehicula. Ut orci lorem, vestibulum eu ante a, venenatis mollis nulla. Nam ornare et mauris non dignissim. Aenean gravida, sapien ac ullamcorper mattis, ex quam scelerisque enim, a bibendum urna urna sed dui. Mauris mollis, leo sed hendrerit congue, erat dolor bibendum ligula, id rhoncus magna lectus eu leo. Proin consectetur odio metus, nec blandit turpis aliquet sed. Maecenas vulputate ultrices nulla sed facilisis. Morbi maximus condimentum scelerisque.</p>
+</div>
+
+<!--/historia do café -->
+
+
+<!--contato-->
+<a href=""></a>
+<h2 class="text-center mt-5 mb-5" id="contato">Entre em contato</h2>
+
+  <div>
+      <div class="mx-auto" style="width:450px">
+        <form>
+            <div class="row">
+                <div class="col">
+                  <input type="text" id="nome" class="form-control" placeholder="Nome" onkeyup="validaNome()">
+                  <div id="txtNome"></div>
+                </div>
+                <div class="col">
+                  <input type="text" id="sobrenome" class="form-control" placeholder="Sobrenome" onkeyup="validaNome()">
+                  <div id="txtSobrenome"></div>  
+                </div>
+              </div>
+          <div class="form-group mt-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>   
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="assunto" placeholder="Mensagem" rows="5" onkeyup="validaAss()"></textarea>
+            <div id="txtAss"></div>  
+          </div>
+          <button type="submit" class="btn btn-outline-dark" onclick="enviar()">Enviar</button>
+        </form> 
+      </div> 
+
+<!--/contato-->
+    <!--rodape-->
+    <hr>
+    <footer>
+
+      <div class="mb-3">
+        <div class="col-md-12 d-flex justify-content-center">
+          
+            <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank">
+                <a href="https://www.linkedin.com/in/agni-dmitri/" target="_blank">
+                    <img id="sm1" class="wh-sm mt-3 mr-5;" src="assets/img/logoin.png" onmousemove="zoomSm1()" onmouseout="outSm1()" alt="logo linkedin">
+                </a>
+
+                <a href="https://www.github.com/agnidmitri" target="_blank">
+                    <img id="sm2" class="wh-sm mt-3 ml-5" src="assets/img/logogit.png" onmousemove="zoomSm2()" onmouseout="outSm2()" alt="logo github">
+                </a>
+        </div>
+      </div>
+        <div class="col-md-12">
+          <p class="text-center">
+            Todos os direitos reservados: Agni Dmitri &copy
+          </p>
+        </div>
+      </div>
+    </footer>
+      <!--/rodape-->
+
+
+<!--bootstrap-->
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+ crossorigin="anonymous"></script>
 </body>
 </html>
