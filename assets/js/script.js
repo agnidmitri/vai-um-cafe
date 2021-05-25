@@ -1,5 +1,6 @@
 let nome = window.document.getElementById('nome')
-let sobrenome = document.getElementById('sobrenome')
+let email = document.querySelector('#email')
+let sobrenome = document.getElementById('#sobrenome')
 let assunto = document.querySelector('#assunto')
 let nomeOk = false
 let emailOk = false
@@ -76,6 +77,17 @@ function validaAss() {
     } else {
         txtAss.innerHTML = ''
         assuntoOk = true
+    }
+}
+
+function validaEmail() {
+    let txtEmail = document.querySelector('#txtEmail')
+
+    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1 ) {
+        txtEmail.innerHTML = 'E-mail inválido'
+    } else {
+        txtEmail.innerHTML = ''
+        emailOk = true
     }
 }
 
